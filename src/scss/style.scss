@@ -1,0 +1,41 @@
+.carousel-caption {
+  &-bg {
+    background-color: rgba(0, 0, 0, 0.5); // черный полупрозрачный фон
+    padding: 15px;
+    border-radius: 8px;
+  }
+}
+
+.modal-content {
+  backdrop-filter: blur(5px); /* легкое размытие фона */
+}
+// Персональный цвет кнопок
+$coral: #FF7F50; // коралловый
+.title-color{
+  color:$coral ;
+}
+.btn-coral {
+  background-color: $coral;
+  border-color: $coral;
+  color: #fff;
+  transition: background-color 0.3s, transform 0.2s;
+    &:hover,
+  &:focus {
+    background-color: #e66b40; /* чуть темнее кораллового */
+    transform: translateY(-2px);
+    color: #fff;
+  }
+
+  &:active {
+    background-color: #cc6036; /* ещё темнее */
+    transform: translateY(0);
+  }
+}
+
+.link-hover {
+  transition: color 0.3s;
+}
+
+.link-hover:hover {
+  color: #FF7F50; // коралловый цвет
+}

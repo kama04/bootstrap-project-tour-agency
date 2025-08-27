@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site with Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+
+<body>
+    <header class="bg-white shadow-sm mb-4">
+        <nav class="navbar navbar-expand-lg navbar-light container">
+            <a class="navbar-brand fw-bold title-color" href="#">Travelia</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Home
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+                            <li><a class="dropdown-item" href="#">Overview</a></li>
+                            <li><a class="dropdown-item" href="#">Updates</a></li>
+                            <li><a class="dropdown-item" href="#">Gallery</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="toursDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Tours
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="toursDropdown">
+                            <li><a class="dropdown-item" href="#">Europe</a></li>
+                            <li><a class="dropdown-item" href="#">Asia</a></li>
+                            <li><a class="dropdown-item" href="#">America</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="destinationsDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Destinations
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="destinationsDropdown">
+                            <li><a class="dropdown-item" href="#">Beach</a></li>
+                            <li><a class="dropdown-item" href="#">Mountains</a></li>
+                            <li><a class="dropdown-item" href="#">Cities</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="btn btn-coral rounded-3 ms-2" href="#">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container py-5">
+        <div class="row g-4">
+            <!-- Accordion -->
+            <div class="col-12 col-lg-3 order-lg-first">
+                <div class="accordion accordion-flush" id="accordionPanelsStayOpenExample">
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseGermany" aria-expanded="false">Germany</button>
+                        </h2>
+                        <div id="collapseGermany" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <strong>Berlin:</strong> Historical landmarks.<br>
+                                <strong>Munich:</strong> Beer festivals.<br>
+                                <strong>Hamburg:</strong> Beautiful port.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTurkey" aria-expanded="false">Turkey</button>
+                        </h2>
+                        <div id="collapseTurkey" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <strong>Istanbul:</strong> Magnificent mosques, palaces, and bazaars.<br>
+                                <strong>Cappadocia:</strong> Hot-air balloon rides and scenic landscapes.<br>
+                                <strong>Antalya:</strong> Sunny beaches and turquoise sea.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseItaly" aria-expanded="false">Italy</button>
+                        </h2>
+                        <div id="collapseItaly" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <strong>Rome:</strong> Colosseum, Vatican City.<br>
+                                <strong>Venice:</strong> Gondolas and canals.<br>
+                                <strong>Florence:</strong> Renaissance art and scenic streets.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFrance" aria-expanded="false">France</button>
+                        </h2>
+                        <div id="collapseFrance" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <strong>Paris:</strong> Eiffel Tower, Louvre Museum.<br>
+                                <strong>Nice:</strong> Stunning beaches of the French Riviera.<br>
+                                <strong>Lyon:</strong> Culinary capital and historic architecture.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSpain" aria-expanded="false">Spain</button>
+                        </h2>
+                        <div id="collapseSpain" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <strong>Barcelona:</strong> Gaudi architecture and beaches.<br>
+                                <strong>Madrid:</strong> Museums and squares.<br>
+                                <strong>Seville:</strong> Flamenco and historic palaces.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Carousel -->
+            <div class="col-12 col-lg-6">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-item active">
+                            <img src="assets/images/germany.jpg" class="d-block w-100" alt="Germany">
+                            <div class="carousel-caption d-block carousel-caption-bg">
+                                <h5>Germany</h5>
+                                <p>Price: €850</p>
+                                <p>Discover stunning castles, explore vibrant cities, and enjoy world-famous beer
+                                    festivals!</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/istanbul.jpg" class="d-block w-100" alt="Turkey">
+                            <div class="carousel-caption d-block carousel-caption-bg">
+                                <h5>Turkey</h5>
+                                <p>Price: €600</p>
+                                <p>Walk through ancient bazaars, taste amazing Turkish cuisine, and admire breathtaking
+                                    mosques!</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/italy.jpg" class="d-block w-100" alt="Italy">
+                            <div class="carousel-caption d-block carousel-caption-bg">
+                                <h5>Italy</h5>
+                                <p>Price: €900</p>
+                                <p>Enjoy authentic pizza and pasta, visit historic ruins, and experience romantic
+                                    gondola rides in Venice!</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/paris.jpg" class="d-block w-100" alt="France">
+                            <div class="carousel-caption d-block carousel-caption-bg">
+                                <h5>France</h5>
+                                <p>Price: €950</p>
+                                <p>See the Eiffel Tower, stroll along the Seine, and immerse yourself in world-class art
+                                    and culture!</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/spain.jpg" class="d-block w-100" alt="Spain">
+                            <div class="carousel-caption d-block carousel-caption-bg">
+                                <h5>Spain</h5>
+                                <p>Price: €780</p>
+                                <p>Relax on sunny beaches, dance to flamenco rhythms, and savor delicious tapas in
+                                    vibrant cities!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Sign Up -->
+            <div class="col-12 col-lg-3">
+                <div class="card shadow-sm rounded-4 p-4 h-100 bg-light">
+                    <h3 class="mb-4 text-center title-color">Sign Up</h3>
+                    <form>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control rounded-3" placeholder="name@example.com">
+                            <label>Email address</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control rounded-3" placeholder="Password">
+                            <label>Password</label>
+                        </div>
+                        <button class="w-100 btn btn-coral btn-lg rounded-3" type="submit">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Popular Destinations -->
+        <div class="container py-5">
+            <h2 class="text-center title-color mb-5">Popular Destinations</h2>
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="assets/images/germany.jpg" class="card-img-top" alt="Germany">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Germany</h5>
+                            <p class="card-text">Explore historic castles, lively cities, and famous beer festivals.</p>
+                            <a href="#contactModal" class="btn btn-coral mt-auto" data-bs-toggle="modal">Contact</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="assets/images/istanbul.jpg" class="card-img-top" alt="Turkey">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Turkey</h5>
+                            <p class="card-text">Visit Istanbul, Cappadocia, and Antalya: bazaars, hot-air balloons, and
+                                beaches!</p>
+                            <a href="#contactModal" class="btn btn-coral mt-auto" data-bs-toggle="modal">Contact</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="assets/images/italy.jpg" class="card-img-top" alt="Italy">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Italy</h5>
+                            <p class="card-text">Enjoy pizza, pasta, historic ruins, and gondola rides in Venice.</p>
+                            <a href="#contactModal" class="btn btn-coral mt-auto" data-bs-toggle="modal">Contact</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="assets/images/paris.jpg" class="card-img-top" alt="France">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">France</h5>
+                            <p class="card-text">See the Eiffel Tower, stroll along the Seine, and enjoy art and
+                                culture.</p>
+                            <a href="#contactModal" class="btn btn-coral mt-auto" data-bs-toggle="modal">Contact</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="assets/images/spain.jpg" class="card-img-top" alt="Spain">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Spain</h5>
+                            <p class="card-text">Relax on sunny beaches, dance flamenco, and enjoy delicious tapas.</p>
+                            <a href="#contactModal" class="btn btn-coral mt-auto" data-bs-toggle="modal">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="container bg-dark text-white mt-4">
+
+        <!-- Gradient line -->
+        <div style="height: 5px; background: linear-gradient(90deg, #FF7F50, #FF6347, #FF7F50);"></div>
+
+        <div class="container py-4">
+            <div class="row">
+                <!-- Navigation links -->
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <ul class="nav justify-content-center justify-content-md-start">
+                        <li class="nav-item"><a href="#" class="nav-link text-white px-2 link-hover">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-white px-2 link-hover">Tours</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-white px-2 link-hover">Destinations</a>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link text-white px-2 link-hover">Contact</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-white px-2 link-hover">About</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="bg-secondary">
+
+            <p class="text-center mb-0">© 2025 Travelia. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4" style="background-color: rgba(255, 255, 255, 0.95);">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <input type="text" class="form-control rounded-3" id="firstName" placeholder="First Name"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control rounded-3" id="lastName" placeholder="Last Name"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control rounded-3" id="phone" placeholder="Phone" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control rounded-3" id="email" placeholder="Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control rounded-3" id="message" rows="4" placeholder="Your message"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-coral w-100 rounded-3">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
